@@ -1,89 +1,97 @@
 <!DOCTYPE html>
-<html>
-
-<head>
-    <meta charset="UTF-8">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato"
+      rel="stylesheet"
+    />
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="./index.css">
-</head>
+    href="https://cdnjs.cloudflare.com/ajax/libs/line-awesome/1.3.0/line-awesome/css/line-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css" />
+    <title>Catty Music</title>
+  </head>
+  <body>
+    <main>
+      <aside>
+        <i class="la la-bars"></i>
+           <i class="la la-home"></i>
+            <i class="la la-search"></i>
+            <i class="la la-volume-up"></i>
+            <i class="la la-user"></i>
+            <i class="la la-cog"></i>
+            <i class="la la-spotify"></i>
+          <i class="la la-soundcloud"></i>
+      </aside>
 
-<body>
-    <section>
-        <header>
-            <img src="https://vif1g.csb.app/src/assets/cattyboard.jpg" alt="Cattyboard album" />
-            <section>
-                <h3>CattyBoard Top 100 Single Charts (11.06.36)</h3>
-                <p class="space-above">A. R. Rahman Artist</p>
-                <p class="space-below">2020. Charts. 100 songs</p>
-                <ul id="bottom">
-                    <li><i class="la la-play"></i> Play all</li>&ensp;
-                    <li><i class="la la-plus"></i> Add to</li>&ensp;
-                    <li><i class="la la-ellipsis-h"></i> More</li>
-                </ul>
-            </section>
-        </header>
-        <nav id='navbar'>
-            <ul id="nav-items">
-                <li class="nav-item"><a href="#"><i class="la la-bars"></i></a></li>
-                <li class="nav-item"><a href="#"><i class="la la-home"></i></a></li>
-                <li class="nav-item"><a href="#"><i class="la la-search"></i></a></li>
-                <li class="nav-item"><a href="#"><i class="la la-volume-up"></i></a></li>
-                <li class="nav-item"><a href="#"><i class="la la-user"></i></a></li>
-                <li class="nav-item"><a href="#"><i class="la la-cog"></i></a></li>
-                <li class="nav-item"><a href="#"><i class="la la-spotify"></i></a></li>
-                <li class="nav-item"><a href="#"><i class="la la-soundcloud"></i></a></li>
+      <section class="content">
+        <div class="music-head">
+            <img src="./src/asserts/cattyboard.jpg" alt="Cattyboard album" />
+
+          <section class="catty-music">
+            <!-- Album details -->
+            <div>
+              <p>CattyBoard Top 100 Single Charts (11.06.36)</p>
+              <p>A. R. Rahman Artist</p>
+              <p>2020. Charts. 100 songs</p>
+             </div>
+            <!-- Music controls -->
+            <div>
+                <ul class="catty-mediaoptions">
+              <i class="la la-play">Play all&nbsp; &nbsp; &nbsp;</i>
+              <i class="la la-plus">Add to&nbsp; &nbsp; &nbsp;</i>
+              <i class="la la-ellipsis-h">More &nbsp; &nbsp; &nbsp;</i>
             </ul>
-        </nav>
-        <article>
-            <table>
-                <tbody>
-                    <tr>
-                        <td>1.Ooravasi Ooravasi</td>
-                        <td>A. R. Rahman</td>
-                        <td>5:40</td>
-                        <td><button>CATTY CLOUD SYNC</button></td>
-                    </tr>
-                    <tr>
-                        <td>2.Neeli Kanumallo</td>
-                        <td> A. R. Rahman</td>
-                        <td>5:48</td>
-                        <td><button>CATTY CLOUD SYNC</button></td>
-                    </tr>
-                    <tr>
-                        <td>3.Gunzukunnaa</td>
-                        <td>A. R. Rahman</td>
-                        <td>4:46</td>
-                        <td><button>CATTY CLOUD SYNC</button></td>
-                    </tr>
-                    <tr>
-                        <td>4.Mental Madhilo</td>
-                        <td>A. R. Rahman</td>
-                        <td>3:26</td>
-                        <td><button>CATTY CLOUD SYNC</button></td>
-                    </tr>
-                </tbody>
-            </table>
-        </article>
-    </section>
-    <footer>
-        <img src="https://vif1g.csb.app/src/assets/cattyboard.jpg" alt="Cattyboard album" />
-        <section>
-            <p class="space-above">If it Ain't Love</p>
-            <p class="space-above">Catson Derulo</p>
-        </section>
-        <ul>
-        
-        <li><i class="la la-step-backward"></i></li>
-        <li><i class="la la-pause"></i></li>
-        <li><i class="la la-step-forward"></i></li>
-        <li><i class="la la-undo-alt"></i></li>
-        <li><i class="la la-random"></i></li>
-            
+            </div>
+          </section>
+        </div>
+
+        <ul class="music-list">
+          <li>
+            <p>1.Ooravasi Ooravasi</p>
+            <p>A. R. Rahman</p>
+            <p>2:54</p>
+            <p><button class="catty-cloud">CATTY CLOUD SYNC</button></p>
+          </li>
+          <li>
+            <p>2.Neeli Kanumallo</p>
+            <p>A. R. Rahman</p>
+            <p>4:06</p>
+            <p><button class="catty-cloud">CATTY CLOUD SYNC</button></p>
+          </li>
+          <li>
+            <p>3.Gunzukunnaa</p>
+            <p>A. R. Rahman</p>
+            <p>3:56</p>
+            <p><button class="catty-cloud">CATTY CLOUD SYNC</button></p>
+          </li>
+          <li>
+            <p>4.4.Mental Madhilo</p>
+            <p>A. R. Rahman</p>
+            <p>3:33</p>
+            <p><button class="catty-cloud">CATTY CLOUD SYNC</button></p>
+          </li>
         </ul>
+      </section>
+    </main>
+
+    <footer>
+      <div class="catty-music-small">
+        <img src="./src/asserts/cattyboard.jpg" alt="Cattyboard album" />
+        <div>
+          <p>If It Ain't Love</p>
+          <p>Catson Derulo</p>
+        </div>
+      </div>
+      <section class="music-controls">
+        <i class="fa fa fa-step-backward"></i>
+        <i class="fa fa-pause"></i>
+        <i class="fa fa-step-forward"></i>
+        <i class="fa fa-rotate-right"></i>
+        <i class="fa fa-random"></i>
+      </section>
     </footer>
-</body>
-
+  </body>
 </html>
-

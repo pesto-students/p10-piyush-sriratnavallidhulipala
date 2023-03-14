@@ -1,128 +1,171 @@
-* {
-    margin: 0;
-    padding: 0;
+html,
+body {
+  height: 100%;
 }
 
 body {
     font-family: 'Lato', sans-serif;
 }
 
-/* styles for layout */
-nav {
-    background-color: rgba(231, 220, 220, 0.899);
-    width: 3%;
-    height: 85vh;
-    float: left;
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  margin: 0;
+  font-family: Lato, sans-serif;
+  color: #222;
+  font-size: 0.9rem;
 }
 
-header {
-    background-color: black;
-    width: 97%;
-    height: 35vh;
-    float: right;
-    color: white;
+main {
+  flex: 1 0 auto;
+  display: flex;
 }
 
-article {
-    height: 50vh;
-    width: 97%;
-    float: left;
+aside {
+  flex: 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #f2f2f2;
 }
 
-/* Clear floats after the columns */
-section::after {
-    content: '';
-    display: table;
-    clear: both;
+aside i.fa {
+  font-size: 1.5em;
 }
 
 footer {
-    background-color:#5072A7;
-    height: 15vh;
-    width: 100vw;
-    color: white;
+  flex: 0 0 90px;
+  color: #fff;
+  background-color: rgba(61, 100, 158, 0.9);
+  display: flex;
+  padding: 10px;
 }
 
-/* styles for navbar */
-ul {
+li {
+  display: flex;
+  padding: 0 20px;
+  min-height: 50px;
+}
+
+li p {
+  flex: 0 0 25%;
+}
+
+li span.catty-cloud {
+  border: 1px solid black;
+  font-size: 0.6em;
+  padding: 3px;
+}
+
+li:nth-child(2n) {
+  background-color: #f2f2f2;
+}
+
+.content {
+  display: flex;
+  flex: 1 1 auto;
+  flex-direction: column;
+}
+
+.music-head {
+  flex: 0 0 280px;
+  display: flex;
+  padding: 40px;
+  background-color: #4e4e4e;
+}
+
+.music-list {
+  flex: 1 0 auto;
+  list-style-type: none;
+  padding: 5px 10px 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.catty-music {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  color: #fff;
+  padding-left: 50px;
+}
+.catty-mediaoptions{
+    flex: 1 0 auto;
     list-style: none;
+    padding: 5px 10px 0; 
+  
 }
 
-nav ul :first-child i {
-    margin-top: 3vh;
+.catty-music div:nth-child(1) {
+  margin-bottom: auto;
 }
 
-nav i {
-    color: black;
-    margin-bottom: 5.5vh;
-    margin-left: 30%;
+.catty-music div:nth-child(1) p:first-child {
+  font-size: 1.8em;
+  margin: 0 0 10px;
 }
 
-/* styles for header */
-header img {
-    width: 15%;
-    height: 23vh;
-    padding: 3%;
-    float: left;
+.catty-music div:nth-child(1) p:not(:first-child) {
+  font-size: 0.9em;
+  margin: 2px 0;
 }
 
-header section {
-    float: left;
-    padding-top: 3%;
+.catty-music div:nth-child(2) {
+  margin-top: 0;
 }
 
-header li {
-    display: inline;
-}
-/* styles for body */
-article table {
-    height: 30vh;
-    width: 97%;
-    padding: 2%;
+.catty-music div:nth-child(2) i.fa {
+  font-size: 0.9rem;
+  padding: 0 0.7em;
+  font-weight: 500;
 }
 
-tr:nth-child(even) {
-    background-color:  rgba(231, 220, 220, 0.899);;
-}
-td button {
-    padding: 2px;
-    color: blue;
-}
-/* styles for footer */
-footer img {
-    width: 10%;
-    height: 12.5vh;
-    padding: 0.5%;
-    float: left;
+.catty-music-small {
+  display: flex;
+  margin-right: auto;
 }
 
-footer section {
-    float: left;
+.catty-music-small div {
+  padding-left: 10px;
 }
 
-footer ul {
-    margin-top: 5.5vh;
-    float: right;
+.catty-music-small img {
+  width: 100px;
 }
 
-footer li {
-    display: inline;
-
+.music-controls {
+  display: flex;
+  flex-basis: 50%;
+  justify-content: space-around;
+  align-items: center;
 }
 
-footer ul :not(:last-child) {
-    margin-right: 150px;
+.music-controls i {
+  font-size: 1.5em;
 }
 
-footer ul :last-child {
-    margin-right: 10px;
-}
+@media screen and (max-width: 480px) {
+  aside {
+    display: none;
+  }
 
-/*common styles*/
-.space-above {
-    margin-top: 20px;
-}
+  .music-head {
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 0;
+  }
 
-.space-below {
-    margin-bottom: 80px;
+  .music-head img {
+    width: 150px;
+  }
+
+  .catty-music div:nth-child(1) p:first-child {
+    font-size: 1em;
+  }
+
 }
