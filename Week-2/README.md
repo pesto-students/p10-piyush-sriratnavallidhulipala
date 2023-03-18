@@ -1,4 +1,7 @@
-Excercise 2.1
+-  [MakeMyTrip Website](https://makemytripwebsite.netlify.app/ )
+-  [OpenCloseSquares](https://openclosesquares.netlify.app/)
+
+Week 2
 Exercise2.1:
 - Create a new webpage on a subject that you're interested in. 
 - The page should **NOT** use anyframework like Bootstrap and it should include the following elements:- 
