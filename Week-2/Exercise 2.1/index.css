@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url("../Exercise 2.1/src/asserts/abstract-overlapping-blue-background-free-vector.jpg");
+  font-family: "Lato", sans-serif;
+}
+button {
+  height: 34px;
+  margin: 0 auto;
+  margin-right: 10px;
+  border-radius: 9px;
+  padding-left: 6px;
+  padding-right: 6px;
+  transform: translate(73%, -19%);
+}
+.button_lab {
+  height: 34px;
+  margin: 0 auto;
+  margin-right: 10px;
+  border-radius: 9px;
+  padding-left: 6px;
+  padding-right: 6px;
+  transform: translate(73%, -19%);
+}
+h2 {
+  text-align: center;
+}
+.subheading {
+  text-align: center;
+}
+/*styles for layout*/
+
+#flex-container {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#flex-container > * {
+  margin: 10px;
+  padding: 5px;
+  flex: 1 100%;
+}
+
+header {
+  background-color: RED;
+  color: white;
+}
+
+#section1 {
+  background-color: rgb(240, 238, 238);
+  flex: 1;
+}
+
+#section2 {
+  background-color: rgb(240, 238, 238);
+  flex: 1;
+}
+
+#section3 {
+  background-color: rgb(240, 238, 238);
+}
+
+footer {
+  background-color: red;
+  color: white;
+}
+
+@media all and (max-width: 950px) {
+  #section1 {
+    flex: 1 100%;
+  }
+
+  #section2 {
+    flex: 1 100%;
+  }
+}
+
+/*styles for header*/
+header > h2 {
+  font-size: 2rem;
+  padding: 3px;
+}
+header > div {
+  font-size: 1.5rem;
+  padding: 3px;
+}
+
+/*styles for section1*/
+.title {
+  font-size: 1.5rem;
+}
+#section1 p {
+  padding: 10px;
+}
+
+/*styles for section3*/
+.form-item {
+  padding: 10px;
+}
+.cand-title {
+  margin-left: 10px;
+}
+#submit {
+  padding: 5px;
+  border: none;
+  background-color: grey;
+}
+#submit:hover {
+  background-color: royalblue;
+}
+
+/*styles for footer*/
+footer {
+  font-size: 1rem;
+}

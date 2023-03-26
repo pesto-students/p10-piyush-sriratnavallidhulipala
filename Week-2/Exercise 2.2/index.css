@@ -1,0 +1,76 @@
+body {
+  height: 100vh;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.content {
+  margin: auto;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.heading {
+  z-index: -1;
+  grid-column: 1;
+  grid-row: 1;
+  text-align: center;
+}
+
+.box-layer {
+  grid-column: 1;
+  grid-row: 1;
+  display: grid;
+}
+
+.red-square {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  grid-column: 1;
+  grid-row: 1;
+  transition: all 1.5s ease;
+}
+
+.yellow-square {
+  width: 200px;
+  height: 200px;
+  background-color: yellow;
+  grid-column: 2;
+  grid-row: 1;
+  transition: all 1.5s ease;
+}
+.blue-square {
+  width: 200px;
+  height: 200px;
+  background-color: blue;
+  grid-column: 1;
+  grid-row: 2;
+  transition: all 1.5s ease;
+}
+.green-square {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+  grid-column: 2;
+  grid-row: 2;
+  transition: all 1.5s ease;
+}
+
+.box-layer:hover > .red-square {
+  transform: rotate(90deg) translateY(200px);
+}
+
+.box-layer:hover > .yellow-square {
+  transform: rotate(-90deg) translateY(200px);
+}
+
+.box-layer:hover > .blue-square {
+  transform: rotate(-90deg) translateY(-200px);
+}
+
+.box-layer:hover > .green-square {
+  transform: rotate(90deg) translateY(-200px);
+}
